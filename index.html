@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <title>SongsHub</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fa-solid fa-headphones"></i> Music Hub</h1>
+            <p>Music for your mental health</p>
+        </div>
+    </header>
+    <div class="notes" id="notes-container">
+
+    </div>
+    <main class="container">
+        <section class="search-section">
+            <div class="search-box">
+                <input type="text" id="search-input" class="search-input" placeholder="Search for Music">
+                <button id="search-button"><i class="fas fa-search"></i> Search</button>
+            </div>
+            <div class="filters">
+                <select id="language-type">
+                    <option value="">Any language</option>
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Sinhala">Sinhala</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="French">French</option>
+                    <option value="Korean">Korean</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Arabic">Arabic</option>
+                </select>
+                <select id="genre-type">
+                    <option value="">Any music genre</option>
+                    <option value="Classical">Classical</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Reggae">Reggae</option>
+                    <option value="Electronic">Electronic</option>
+                </select>
+                <select id="mood-type">
+                    <option value="">Any mood</option>
+                    <option value="Happy">Happy</option>
+                    <option value="Sad">Sad</option>
+                    <option value="Romantic">Romantic</option>
+                    <option value="Calm">Calm</option>
+                    <option value="Energetic">Energetic</option>
+                    <option value="Inspirational">Inspirational</option>
+                </select>
+                <select id="activity-type">
+                    <option value="">Any activity</option>
+                    <option value="Workout">Workout</option>
+                    <option value="Party">Party</option>
+                    <option value="Meditation">Meditation</option>
+                    <option value="Road Trip">Road Trip</option>
+                </select>
+                <select id="era-type">
+                    <option value="">Any era or decade</option>
+                    <option value="2020s Hits">2020s Hits</option>
+                    <option value="2010s Pop">2010s Pop</option>
+                    <option value="2000s Classics">2000s Classics</option>
+                    <option value="Golden Classics">Golden Classics</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Searching for the best music for you...</p>
+            </div>
+            <div class="results-container" id="results-container"></div>
+
+            <div class="no-results" id="no-results">
+                <i class="fas fa-search"></i>
+                <h3>No music found</h3>
+                <p>Try for a different music or adjust your filters</p>
+            </div>
+
+            <div class="error-message" id="error-message">
+                <i class="fa-solid fa-bomb"></i>
+                <h3>Something went wrong</h3>
+                <p>We couldn't find the song. Please try again later</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Developed by Devindi</p>
+            <p>&copy; 🎵 SongsHub — Your Music, Your Way
+                © 2025 SoundWave Inc. All rights reserved.
+                Discover millions of songs, playlists, and podcasts. Enjoy music anytime, anywhere.
+                📧 Support: support@soundwave.com | 🌐 www.soundwave.com
+                Follow us: Facebook | Instagram | Twitter | YouTube
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
